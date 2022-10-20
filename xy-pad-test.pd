@@ -1,0 +1,12 @@
+#N struct 1020-pad float x float y float lx float ly float cx float
+cy float rx float ry float ex float ey;
+#N canvas 780 189 381 384 10;
+#X floatatom 30 340 5 0 0 0 - - toxsetter;
+#X floatatom 323 340 5 0 0 0 - - toysetter;
+#X floatatom 30 4 5 -100 100 0 - xsetter -;
+#X floatatom 323 4 5 -100 100 0 - ysetter -;
+#X obj 30 30 xy-pad;
+#X connect 2 0 4 0;
+#X connect 3 0 4 1;
+#X connect 4 0 0 0;
+#X connect 4 2 1 0;
